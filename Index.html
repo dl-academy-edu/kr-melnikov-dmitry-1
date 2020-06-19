@@ -3,35 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Home</title>
   </head>
   <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header container">
       <a href="/Index.html">
         <img class="header-link" src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
-        <ul class="header-list">
-          <li><a class="header-nav-link" href="#">Blog</a></li>
-          <li><a class="header-nav-link" href="#">Catalog</a></li>
-          <li><a class="header-nav-link" href="#">About us</a></li>
+        <ul class="header-list list">
+          <li><a class="header-link" href="#">Blog</a></li>
+          <li>
+            <a class="header-link" href="/pages/catalog/index.html">Catalog</a>
+          </li>
+          <li><a class="header-link" href="#">About us</a></li>
         </ul>
       </nav>
-      <ul class="header-contacts">
+      <ul class="header-contacts list">
         <li>
-          <button class="header-search-button">
+          <button class="header-search-button header-link">
             <img src="/images/search.png" alt="Search" />
           </button>
         </li>
         <li>
-          <a class="button" href="#">
+          <a class="header-link" href="#">
             Contact Us
           </a>
         </li>
       </ul>
     </header>
     <main>
-      <section class="poster">
+      <!-- POSTER -->
+      <section class="poster container">
         <h1 class="poster-title">
           THE OOH NOO COLLECTION
         </h1>
@@ -39,7 +49,7 @@
           <h2 class="poster-swith-title">
             01
           </h2>
-          <ul class="poster-list">
+          <ul class="poster-list list">
             <li>
               <button class="poster-swith-button 1">
                 _
@@ -66,11 +76,12 @@
         <a class="button" href="#">EXPLORE NOW</a>
         <p>FREE (CONTINENTAL) USA SHIPPINGON ALL ORDERS OF $100 USD OR MORE!</p>
       </section>
-      <section class="category">
+      <!-- CATEGORY -->
+      <section class="category container">
         <a href="/pages/catalog/index.html">
           <h2 class="category-title">CATEGORY PRODUCTS</h2>
         </a>
-        <ul class="category-list">
+        <ul class="category-list list">
           <li class="category-card">
             <a class="category-card-name" href="#">APPAREL KIDS</a>
           </li>
@@ -97,12 +108,13 @@
           around the world from fashion to furniture for kids and adults.
         </p>
       </section>
-      <section class="useful">
+      <!-- USEFUL CONTENT BLOCK -->
+      <section class="useful container">
         <h2 class="useful-title">
           DELIVERY
         </h2>
         <img class="useful-img" src="/images/delivery.jpg" alt="useful" />
-        <ul class="useful-list">
+        <ul class="useful-list list">
           <li class="delivery">
             <button class="delivery-button link">Delivery</button>
           </li>
@@ -123,9 +135,10 @@
         </p>
         <a class="button" href="#">LEARN MORE</a>
       </section>
-      <section class="partners">
+      <!-- PARTNERS -->
+      <section class="partners container">
         <h2 class="hidden">Partners</h2>
-        <ul>
+        <ul class="partners-list list">
           <li>
             <a class="partner" href="#"
               ><img src="/images/mail.png" alt="MAIL.ru"
@@ -149,6 +162,7 @@
         </ul>
       </section>
     </main>
+    <div class="container">
     <article class="article">
       <h2 class="article-title">DESIGN LIFE KIDS</h2>
       <h3 class="article-add-title">About Us</h3>
@@ -165,12 +179,13 @@
         are other days that i am completely shocked that four years have flown
         by. It's simply magical.
       </p>
-      <div class="map"></div>
+    </div>
     </section>
     <footer class="footer">
+      <div class="container">
       <section class="footer-nav">
         <h2 class="footer-nav-title">Navigation</h2>
-        <ul>
+        <ul class="footer-nav-list list">
           <li>
             <a href="#">About Us</a>
           </li>
@@ -193,7 +208,7 @@
       </section>
       <section class="footer-customer">
         <h2 class="footer-customer-title">Customer Information</h2>
-        <ul>
+        <ul class="footer-customer-list list">
           <li>
             <a href="#">Contact Us</a>
           </li>
@@ -218,7 +233,7 @@
         <h2 class="footer-contact-title">Connect</h2>
         <div class="joinus"></div>
         <!-- Здесь будет форма регистрации с полем ввода e-mail -->
-        <ul class="footer-contact-list">
+        <ul class="footer-contact-list list">
           <li>
             <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
           </li>
@@ -235,7 +250,7 @@
       </section>
       <section class="footer-additional">
         <h2 class="hidden">additional links</h2>
-        <ul class="footer-additional-list">
+        <ul class="footer-additional-list list">
           <li>
             <a href="#">Company Rating</a>
             <ol class="rating">
@@ -274,6 +289,7 @@
           </li>
         </ul>
       </section>
+    </div>
     </footer>
     <form name="contact-us" class="contact-us" method="get" action="#">
       <fieldset>

@@ -1,0 +1,9 @@
+.poster {
+  background-color: #eee4db;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding-top: 143px;
+  padding-bottom: 286px;
+}

@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Toys</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <a href="/Index.html">
         <img class="header-link" src="/images/logo.svg" alt="logo" />
@@ -13,7 +20,11 @@
       <nav class="header-nav">
         <ul class="header-list">
           <li><a class="header-nav-link" href="#">Blog</a></li>
-          <li><a class="header-nav-link" href="#">Catalog</a></li>
+          <li>
+            <a class="header-nav-link" href="/pages/catalog/index.html"
+              >Catalog</a
+            >
+          </li>
           <li><a class="header-nav-link" href="#">About us</a></li>
         </ul>
       </nav>
@@ -30,6 +41,7 @@
         </li>
       </ul>
     </header>
+    <!-- MAIN -->
     <main>
       <section class="path">
         <h1 class="page-title">
@@ -266,6 +278,11 @@
         </h2>
         <div class="page-number">
           <ol class="page-number-list list-point-none">
+            <li class="breadcrumbs-item">
+              <button class="breadcrumbs-link-active">
+                <img src="/images/left.svg" alt="Left" />
+              </button>
+            </li>
             <li class="page-item">
               <span class="page-active">1</span>
             </li>
@@ -284,10 +301,16 @@
                 <span>4</span>
               </a>
             </li>
+            <li class="breadcrumbs-item">
+              <button href="#" class="breadcrumbs-link-active">
+                <img src="/images/right.svg" alt="Right" />
+              </button>
+            </li>
           </ol>
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <section class="footer-nav">
         <h2 class="footer-nav-title">Navigation</h2>
