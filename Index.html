@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -28,24 +29,26 @@
       </nav>
       <ul class="header-contacts list">
         <li>
-          <button class="header-search-button header-link">
+          <button class="header-search-button button-picture">
             <img src="/images/search.png" alt="Search" />
           </button>
         </li>
         <li>
-          <a class="header-link" href="#">
+          <a class="header-link bold" href="#">
             Contact Us
           </a>
         </li>
       </ul>
     </header>
+    <!-- MAIN -->
     <main>
       <!-- POSTER -->
-      <section class="poster container">
+      <section class="poster">
+        <div class="poster-content container">
         <h1 class="poster-title">
           THE OOH NOO COLLECTION
         </h1>
-        <section class="poster-swith">
+        <div class="poster-swith">
           <h2 class="poster-swith-title">
             01
           </h2>
@@ -71,10 +74,11 @@
               </button>
             </li>
           </ul>
-        </section>
-        <p>Designed in Slovenia</p>
+        </div>
+        <p class="poster-text">Designed in Slovenia</p>
         <a class="button" href="#">EXPLORE NOW</a>
-        <p>FREE (CONTINENTAL) USA SHIPPINGON ALL ORDERS OF $100 USD OR MORE!</p>
+      </div>
+        <div class="poster-bottom-text"><p>FREE (CONTINENTAL) USA SHIPPINGON ALL ORDERS OF $100 USD OR MORE!</p></div>
       </section>
       <!-- CATEGORY -->
       <section class="category container">
@@ -181,70 +185,74 @@
       </p>
     </div>
     </section>
+    <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-content container">
       <section class="footer-nav">
-        <h2 class="footer-nav-title">Navigation</h2>
+        <h2 class="footer-title">Navigation</h2>
         <ul class="footer-nav-list list">
           <li>
-            <a href="#">About Us</a>
+            <a class="footer-link" href="#">About Us</a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a class="footer-link" href="#">Blog</a>
           </li>
           <li>
-            <a href="#">Design Services</a>
+            <a class="footer-link" href="#">Design Services</a>
           </li>
           <li>
-            <a href="#">Featured On</a>
+            <a class="footer-link" href="#">Featured On</a>
           </li>
           <li>
-            <a href="#">2018 Holiday Catalog</a>
+            <a class="footer-link" href="#">2018 Holiday Catalog</a>
           </li>
           <li>
-            <a href="#">Shop By Designer</a>
+            <a class="footer-link" href="#">Shop By Designer</a>
           </li>
         </ul>
       </section>
       <section class="footer-customer">
-        <h2 class="footer-customer-title">Customer Information</h2>
+        <h2 class="footer-title">Customer Information</h2>
         <ul class="footer-customer-list list">
           <li>
-            <a href="#">Contact Us</a>
+            <a class="footer-link" href="#">Contact Us</a>
           </li>
           <li>
-            <a href="#">Sale Exclusions</a>
+            <a class="footer-link" href="#">Sale Exclusions</a>
           </li>
           <li>
-            <a href="#">Shipping & Returns</a>
+            <a class="footer-link" href="#">Shipping & Returns</a>
           </li>
           <li>
-            <a href="#">Terms & Conditions</a>
+            <a class="footer-link" href="#">Terms & Conditions</a>
           </li>
           <li>
-            <a href="#"> Privacy Policy </a>
+            <a class="footer-link" href="#"> Privacy Policy </a>
           </li>
           <li>
-            <a href="#">Search</a>
+            <a class="footer-link" href="#">Search</a>
           </li>
         </ul>
       </section>
       <section class="footer-contact">
-        <h2 class="footer-contact-title">Connect</h2>
-        <div class="joinus"></div>
-        <!-- Здесь будет форма регистрации с полем ввода e-mail -->
-        <ul class="footer-contact-list list">
+        <h2 class="footer-title">Connect</h2>
+          <form class="join"> 
+          <input type="email-join" name="email-join" id="email-join" placeholder = "Email" />
+          <button class="footer-button button" type="button">
+            JOIN
+          </button></form>
+          <ul class="footer-contact-list list">
           <li>
-            <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
+            <a class="footer-contact-link" href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
           </li>
           <li>
-            <a href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
+            <a class="footer-contact-link" href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
           </li>
           <li>
-            <a href="#"><img src="/images/pinterest.png" alt="Pinterest" /></a>
+            <a class="footer-contact-link" href="#"><img src="/images/pinterest.png" alt="Pinterest" /></a>
           </li>
           <li>
-            <a href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
+            <a class="footer-contact-link" href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
           </li>
         </ul>
       </section>
@@ -252,8 +260,8 @@
         <h2 class="hidden">additional links</h2>
         <ul class="footer-additional-list list">
           <li>
-            <a href="#">Company Rating</a>
-            <ol class="rating">
+            <a class="footer-link" href="#">Company Rating</a>
+            <ol class="rating list">
               <li>
                 <button class="rating-button 1">
                   <img src="/images/star.png" alt="Rating" />
@@ -282,15 +290,16 @@
             </ol>
           </li>
           <li>
-            <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+            <a class="footer-link" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
           </li>
           <li>
-            <a href="#">Web Design — Direct Line Development</a>
+            <a class="footer-link link_gray" href="#">Web Design — Direct Line Development</a>
           </li>
         </ul>
       </section>
     </div>
     </footer>
+    <!-- Contact Us FORM -->
     <form name="contact-us" class="contact-us" method="get" action="#">
       <fieldset>
         <label for="name">Name</label>
@@ -311,11 +320,11 @@
           By clicking on the button, you consent to the processing of your
           personal data
         </label>
-        <button type="submit">
+        <button class="button button_gray" type="submit">
           SUBMIT
         </button>
       </fieldset>
-      <button type="button">
+      <button class="button-picture" type="button">
         <svg
           width="15"
           height="15"

@@ -1,9 +1,65 @@
-.poster {
-  background-color: #eee4db;
+/* POSTER */
+.poster-content {
+  /* background-image: url(/images/poster-1.png); 
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  margin-top: 145px;
+  padding-top: 17px 0 0 0;*/
 
-  padding-top: 143px;
-  padding-bottom: 286px;
+  background-color: #eee4db;
 }
+
+.poster-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+
+  color: #1e0606;
+}
+
+.poster-swith-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+  margin: 17px 0 0 28px;
+
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.poster-text {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #1e0606;
+}
+
+.poster-bottom-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  padding: 11px auto;
+  height: 39px;
+  margin: 0 auto;
+
+  background-color: #c29974;
+}
+.poster-bottom-text > p {
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+/* CATEGORY */
