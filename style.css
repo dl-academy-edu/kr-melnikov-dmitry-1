@@ -91,6 +91,50 @@
 .category-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px -23px;
+}
+
+.category-card {
+  padding: 0 5px;
+  margin-bottom: 23px;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.category-card-link {
+  /* background: #0e90d2; */
+  position: relative;
+  min-height: 270px;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-card-name {
+  z-index: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  max-width: 192px;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.category-card-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+/* .category-list { 
+  list-style-type: none;
+  display: flex;
   justify-content: space-between;
   padding: 0;
 }
@@ -157,7 +201,7 @@
   background-blend-mode: multiply;
 
   background-color: rgba(9, 3, 79, 0.17);
-}
+} */
 
 .category-bottom {
   display: flex;
