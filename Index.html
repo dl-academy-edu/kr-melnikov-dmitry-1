@@ -29,7 +29,7 @@
       </nav>
       <ul class="header-contacts">
         <li>
-          <button class="header-search-button button-picture">
+          <button class="header-search-button button-transparent">
             <img src="/images/search.png" alt="Search" />
           </button>
         </li>
@@ -116,10 +116,10 @@
           </li>
         </ul>
         <div class="category-bottom">
-        <button class="category-button">
+        <button class="category-button button-transparent">
           <img src="/images/left.svg" alt="Left" />
         </button>
-        <button class="category-button">
+        <button class="category-button button-transparent">
           <img src="/images/right.svg" alt="Right" />
         </button>
         <p class="category-text">
@@ -135,14 +135,14 @@
         </h2>
         <img class="useful-img" src="/images/delivery.jpg" alt="useful" />
         <ul class="useful-list">
-          <li class="delivery">
-            <button class="delivery-button link">Delivery</button>
+          <li class="useful-point">
+            <button class="useful-button button-transparent">Delivery</button>
           </li>
-          <li class="guarantee">
-            <button class="guarantee-button link">Guarantee</button>
+          <li class="useful-point">
+            <button class="useful-button button-transparent">Guarantee</button>
           </li>
-          <li class="credit">
-            <button class="credit-button link">Credit</button>
+          <li class="useful-point">
+            <button class="useful-button button-transparent">Credit</button>
           </li>
         </ul>
         <p class="useful-text">
@@ -225,6 +225,38 @@
           <li>
             <a class="footer-link" href="#">Shop By Designer</a>
           </li>
+          <li>
+            <ol class="rating-list footer-additional">
+              <li>
+              <a class="footer-link link_brown" href="#">Company Rating</a>
+              </li>
+              <li>
+                <button class="rating-button rating-button_1">
+                  <img src="/images/star.png" alt="One star" />
+                </button>
+              </li>
+              <li>
+                <button class="rating-button rating-button_2">
+                  <img src="/images/star.png" alt="Two star" />
+                </button>
+              </li>
+              <li>
+                <button class="rating-button rating-button_3">
+                  <img src="/images/star.png" alt="Three star" />
+                </button>
+              </li>
+              <li>
+                <button class="rating-button rating-button_4">
+                  <img src="/images/star.png" alt="Four star" />
+                </button>
+              </li>
+              <li>
+                <button class="rating-button rating-button_5">
+                  <img src="/images/star.png" alt="Five star" />
+                </button>
+              </li>
+            </ol>
+          </li>
         </ul>
       </section>
       <section class="footer-customer">
@@ -247,6 +279,9 @@
           </li>
           <li>
             <a class="footer-link" href="#">Search</a>
+          </li>
+          <li>
+            <a class="footer-link footer-additional" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
           </li>
         </ul>
       </section>
@@ -271,39 +306,43 @@
             <a class="footer-contact-link" href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
           </li>
         </ul>
+        <a class="footer-link footer-additional link_gray" href="#">Web Design — Direct Line Development</a>
       </section>
-      <section class="footer-additional">
-        <h2 class="hidden">additional links</h2>
+      <!-- <section class="footer-additional">
+        <h2 class="footer-additional-title hidden">additional links</h2>
         <ul class="footer-additional-list">
           <li>
-            <a class="footer-link" href="#">Company Rating</a>
-            <ol class="rating">
+            <ol class="rating-list">
               <li>
-                <button class="rating-button 1">
-                  <img src="/images/star.png" alt="Rating" />
+              <a class="footer-link" href="#">Company Rating</a>
+              </li>
+              <li>
+                <button class="rating-button button-transparent 1">
+                  <img src="/images/star.png" alt="One star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 2">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 2">
+                  <img src="/images/star.png" alt="Two star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 3">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 3">
+                  <img src="/images/star.png" alt="Three star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 4">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 4">
+                  <img src="/images/star.png" alt="Four star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 5">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 5">
+                  <img src="/images/star.png" alt="Five star" />
                 </button>
               </li>
             </ol>
+          
           </li>
           <li>
             <a class="footer-link" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
@@ -312,35 +351,35 @@
             <a class="footer-link link_gray" href="#">Web Design — Direct Line Development</a>
           </li>
         </ul>
-      </section>
+      </section> -->
     </div>
     </footer>
     <!-- Contact Us FORM -->
     <form name="contact-us" class="contact-us" method="get" action="#">
       <fieldset>
         <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
+        <input type="input-text" name="name" id="name" />
         <label for="phone">Phone</label>
         <input type="tel" name="phone" id="phone" />
         <label for="email">Email</label>
         <input type="email" name="email" id="email" />
-        <label for="message">Message</label>
+        <label>Message
+          <textarea class="textarea" name="message" cols="30" rows="10"></textarea></label>
         <input
-          type="text"
+          type="textarea"
           name="message"
           id="message"
-          style="width: 300px; height: 200px;"
-        />
+          />
         <label>
           <input name="agreement" type="checkbox" />
           By clicking on the button, you consent to the processing of your
           personal data
         </label>
-        <button class="button button_gray" type="submit">
+        <button class="button" type="submit">
           SUBMIT
         </button>
       </fieldset>
-      <button class="button-picture" type="button">
+      <button class="button-transparent" type="button">
         <svg
           width="15"
           height="15"

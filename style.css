@@ -103,7 +103,6 @@
 }
 
 .category-card-link {
-  /* background: #0e90d2; */
   position: relative;
   min-height: 270px;
   min-width: 280px;
@@ -130,7 +129,6 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
 }
 /* .category-list { 
   list-style-type: none;
@@ -207,9 +205,8 @@
   display: flex;
   align-items: center;
 }
+
 .category-button {
-  display: block;
-  border: none;
   height: 37px;
   width: 37px;
   margin-right: 6px;
