@@ -226,3 +226,38 @@
 
   color: #1e0606;
 }
+
+/* USEFUL CONTENT BLOCK */
+
+.useful {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.useful-text {
+  display: block;
+  max-width: 480px;
+}
+
+/* PARTNERS */
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+
+/* ARTICLE */
+
+.article-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-content-point {
+max-width: 543px;
+}
