@@ -1,12 +1,16 @@
 /* POSTER */
 
+.poster {
+  padding: 0 80px;
+}
+
 .poster-content {
-  /* background-image: url(/images/poster-1.png); 
-  background-repeat: no-repeat;
-  
-  padding-top: 17px 0 0 0;*/
-  margin-top: 79px;
-  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 17px;
+  padding-left: 29px;
+  padding-bottom: 89px;
 
   background-color: #eee4db;
 }
@@ -17,26 +21,56 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 44px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 
   color: #1e0606;
 }
 
+.poster-swith {
+  z-index: 1;
+  order: 0;
+  padding: 0;
+}
+
+.poster-useful {
+  z-index: 1;
+  order: 1;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-bottom: 0px;
+}
+
+.poster-transparent {
+  order: 2;
+  position: absolute;
+  right: 100px;
+  top: -90px;
+}
+
 .poster-swith-title {
+  display: block;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 60px;
   line-height: 73px;
-  margin: 17px 0 0 28px;
 
   color: rgba(30, 6, 6, 0.05);
+  margin: 0;
 }
 
 .poster-list {
+  display: block;
   list-style-type: none;
+  padding-left: 0;
+  margin: 11px 1px;
 }
 
 .poster-text {
+  margin: 18px 0 10px;
   font-family: "Crimson Text";
   font-style: italic;
   font-weight: normal;
@@ -46,11 +80,22 @@
   color: #1e0606;
 }
 
+.poster-swith-button {
+  height: 3px;
+  width: 31px;
+  margin-bottom: 11px;
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.poster-button {
+  margin-top: 18px;
+}
+
 .poster-bottom {
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 39px;
 
   background-color: #c29974;
 }
@@ -62,6 +107,7 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
+  text-align: center;
 
   color: #ffffff;
 }
@@ -82,33 +128,57 @@
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
-  justify-self: start;
-  align-self: start;
   color: #1e0606;
-  padding: 0;
+  padding-left: 10px;
+  margin-top: 0;
 }
 
 .category-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -5px -23px;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  margin: 0;
 }
 
 .category-card {
-  padding: 0 5px;
-  margin-bottom: 23px;
-  box-sizing: border-box;
-  width: 25%;
+  padding: 0px;
+  display: block;
+  margin: 0 10px 30px;
 }
 
 .category-card-link {
   position: relative;
-  min-height: 270px;
-  min-width: 280px;
+  height: 270px;
+  width: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.category-card-link[href="#1"] {
+  background-image: url(/images/apparel-kids.png);
+  background-color: #dbe4db;
+}
+
+.category-card-link[href="#2"] {
+  background-image: url(/images/holiday-shop.png);
+  background-color: rgba(186, 142, 107, 0.3);
+}
+
+.category-card-link[href="/pages/catalog/toys/index.html"] {
+  background-image: url(/images/toys.png);
+  background-color: #dbe4db;
+}
+
+.category-card-link[href="#4"] {
+  background-image: url(/images/accessories.png);
+  background-color: rgba(9, 3, 79, 0.17);
 }
 
 .category-card-name {
@@ -125,40 +195,33 @@
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
-.category-card-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-/* .category-list { 
-  list-style-type: none;
+.category-bottom {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.category-card {
-  display: flex;
-  margin: 0;
-  height: 270px;
-  width: 280px;
-  justify-content: center;
   align-items: center;
+  margin-left: 8px;
+  margin-bottom: 90px;
 }
 
-.category-card-name {
-  display: block;
-  max-width: 192px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+.category-button {
+  height: 37px;
+  width: 37px;
+  margin-right: 8px;
+  padding: 0;
 
-  color: #ffffff;
+  background-color: rgba(112, 187, 220, 0.2);
+}
+
+.category-text {
+  display: block;
+  max-width: 580px;
+  margin: 0 0 0 14px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #1e0606;
 }
 
 .category-card[href="#1"] {
@@ -171,53 +234,69 @@
   background-color: #dbe4db;
 }
 
-.category-card[href="#2"] {
-  background-image: url("/images/holiday-shop.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-blend-mode: multiply;
+/* USEFUL CONTENT BLOCK */
 
-  background-color: rgba(186, 142, 107, 0.3);
-}
-
-.category-card[href="/pages/catalog/toys/index.html"] {
-  background-image: url("/images/toys.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-blend-mode: multiply;
-
-  background-color: #f8f2da;
-}
-
-.category-card[href="#4"] {
-  background-image: url("/images/accessories.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-blend-mode: multiply;
-
-  background-color: rgba(9, 3, 79, 0.17);
-} */
-
-.category-bottom {
+.useful {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
 }
 
-.category-button {
-  height: 37px;
-  width: 37px;
-  margin-right: 6px;
-
-  background-color: rgba(112, 187, 220, 0.2);
-}
-
-.category-text {
+.useful-img {
   display: block;
-  max-width: 580px;
-  margin-left: 20px;
+  max-width: 480px;
+}
+
+.useful-content {
+  padding: 30px 0 0 60px;
+}
+
+.useful-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  padding-left: 61px;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+
+  color: #1e0606;
+}
+
+.useful-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.useful-button {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  width: 326px;
+  margin-left: 0;
+  text-align: start;
+  margin-bottom: 11px;
+  padding-left: 60px;
+  padding-top: 1;
+  padding-bottom: 12px;
+
+  color: #1e0606;
+}
+.useful-button[value="delivery"] {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.useful-text {
+  margin-top: 0;
+  margin-left: 60px;
+  max-width: 480px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -227,19 +306,17 @@
   color: #1e0606;
 }
 
-/* USEFUL CONTENT BLOCK */
-
-.useful {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.useful-text {
-  display: block;
-  max-width: 480px;
+.more-useful-button {
+  margin-left: 60px;
+  margin-top: 25px;
+  width: 149px;
 }
 
 /* PARTNERS */
+
+.partners {
+  margin-bottom: 113px;
+}
 
 .partners-list {
   display: flex;
@@ -255,9 +332,77 @@
 .article-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 147px;
+}
+
+.article {
+  margin-right: 57px;
 }
 
 .article-content-point {
-max-width: 543px;
+  max-width: 543px;
+  padding: 30px;
+  position: relative;
+
+  background-color: #e1f0f7;
+}
+
+.article-title,
+.contacts-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: -26px;
+
+  color: #1e0606;
+}
+
+.article-add-title {
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: 2px;
+  margin-bottom: 9px;
+
+  color: #1e0606;
+}
+
+.article-text,
+.contacts-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #1e0606;
+}
+
+.article-text {
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+
+.article-button {
+  width: 123px;
+  margin-bottom: 5px;
+}
+
+.contacts-text {
+  margin-top: 10px;
+  margin-bottom: 72px;
+}
+
+.map {
+  position: absolute;
+  top: 126px;
 }
