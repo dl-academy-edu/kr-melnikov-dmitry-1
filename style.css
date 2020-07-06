@@ -1,6 +1,139 @@
 /* POSTER */
 
 .poster {
+  margin-top: -22px; 
+  padding: 0 80px;
+}
+
+.poster-content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 106px;
+  padding-left: 29px;
+  padding-bottom: 89px;
+
+  background: linear-gradient( to bottom, #ffffff 89px, #eee4db 0px, #eee4db 372px);
+}
+
+.poster-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+
+  color: #1e0606;
+}
+
+.poster-swith {
+  order: 0;
+  padding: 0;
+}
+
+.poster-useful {
+  z-index: 1;
+  order: 1;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: 45px;
+  margin-bottom: 0px;
+
+}
+
+.poster-transparent {
+  order: 2;
+  position: relative;
+  left: 5px;
+  top: -111px;
+  margin-bottom: -200px;
+}
+
+.poster-swith-title {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 73px;
+
+  color: rgba(30, 6, 6, 0.05);
+  margin: 0;
+}
+
+.poster-list {
+  display: block;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 11px 1px;
+}
+
+.poster-text {
+  margin: 18px 0 10px;
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #1e0606;
+}
+
+.poster-swith-button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 3px;
+  width: 31px;
+  margin-bottom: 11px;
+
+  background-color: #D6CAC2;
+}
+
+.poster-swith-button_active {
+
+  background-color: #725F5B;
+}
+
+.poster-swith-button:hover {
+  background-color: #725F5B;
+}
+
+.poster-swith-button:active {
+  opacity: 0.5;
+}
+
+.poster-button {
+  margin-top: 18px;
+}
+
+.poster-bottom {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #c29974;
+}
+.poster-bottom-text {
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+}
+ /* Второй вариант верстки Poster */
+/* .poster {
+  margin-top: 127px;
   padding: 0 80px;
 }
 
@@ -110,7 +243,7 @@
   text-align: center;
 
   color: #ffffff;
-}
+} */
 
 /* CATEGORY */
 
@@ -195,6 +328,15 @@
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
 }
 
+.category-card-link:hover > .category-card-name {
+  text-decoration-line: underline;
+}
+
+.category-card-link:active > .category-card-name {
+  text-decoration-line: underline;
+  opacity: .5;
+}
+
 .category-bottom {
   display: flex;
   align-items: center;
@@ -242,11 +384,6 @@
   margin-bottom: 90px;
 }
 
-.useful-img {
-  display: block;
-  max-width: 480px;
-}
-
 .useful-content {
   padding: 30px 0 0 60px;
 }
@@ -287,10 +424,15 @@
   padding-bottom: 12px;
 
   color: #1e0606;
+
+  background: none;
 }
-.useful-button[value="delivery"] {
+
+.useful-button_active {
   padding-top: 11px;
   padding-bottom: 11px;
+
+  background-color: rgba(112, 187, 220, 0.2);;
 }
 
 .useful-text {
@@ -327,6 +469,14 @@
   align-items: center;
 }
 
+.partner:hover{
+  opacity: .5;
+}
+
+.partner:active{
+  opacity: .2;
+}
+
 /* ARTICLE */
 
 .article-content {
@@ -342,6 +492,7 @@
 
 .article-content-point {
   max-width: 543px;
+  min-height: 209px;
   padding: 30px;
   position: relative;
 
@@ -365,7 +516,7 @@
 }
 
 .article-add-title {
-  font-family: Crimson Text;
+  font-family: "Crimson Text";
   font-style: italic;
   font-weight: normal;
   font-size: 26px;
@@ -394,15 +545,67 @@
 
 .article-button {
   width: 123px;
+  margin-top: 21px;
   margin-bottom: 5px;
 }
 
 .contacts-text {
   margin-top: 10px;
-  margin-bottom: 72px;
 }
 
 .map {
   position: absolute;
-  top: 126px;
+  bottom: -114px;
+}
+
+/* Modal */
+
+.modal-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  background-color: rgba(125, 151, 218, 0.8);
+}
+
+.modal-bg_open {
+  display: flex;
+}
+
+.modal-window {
+  width: 680px;
+
+  padding: 20px 40px 42px;
+
+  margin: auto;
+
+  background-color: #E5EAF8;
+
+  position: relative;
+}
+
+.button-close {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  cursor: pointer;
+  background: none;
+  outline: none;
+
+  width: 15px;
+  height: 15px;
+
+  border: none;
+}
+
+.button-close:hover {
+  opacity: .5;
+}
+
+.button-close:active {
+  opacity: .3;
 }

@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
@@ -11,44 +15,48 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Catalog</title>
   </head>
+
   <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header container">
       <a href="/Index.html">
         <img class="header-link" src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
         <ul class="header-list">
-          <li><a class="header-nav-link" href="#">Blog</a></li>
+          <li><a class="header-link" href="/pages/blog/index.html">Blog</a></li>
           <li>
-            <a class="header-nav-link" href="/pages/catalog/index.html"
-              >Catalog</a
-            >
+            <a class="header-link" href="/pages/catalog/index.html">Catalog</a>
           </li>
-          <li><a class="header-nav-link" href="#">About us</a></li>
+          <li><a class="header-link" href="#">About us</a></li>
         </ul>
       </nav>
       <ul class="header-contacts">
         <li>
-          <button class="header-search-button">
+          <button class="header-search-button button-transparent">
             <img src="/images/search.png" alt="Search" />
           </button>
         </li>
         <li>
-          <a class="button" href="#">
+          <a
+            class="header-link header-link_nomargin"
+            href="/pages/contact-us/index.html"
+          >
             Contact Us
           </a>
         </li>
       </ul>
     </header>
+    <!-- MAIN -->
     <main>
-      <section class="path">
+      <section class="path container">
         <h1 class="page-title">
           CATEGORY PRODUCTS
         </h1>
         <div class="breadcrumbs">
-          <ul class="breadcrumbs-list list-point-none">
+          <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a href="/index.html" class="breadcrumbs-link-active">
+              <a href="/index.html" class="breadcrumbs-link">
                 <span>Home</span>
               </a>
             </li>
@@ -69,7 +77,12 @@
               </svg>
             </li>
             <li class="breadcrumbs-item">
-              <span class="breadcrumbs-active">Catalog</span>
+              <a
+                href="/pages/catalog/index.html"
+                class="breadcrumbs-link breadcrumbs-link_active"
+              >
+                <span>Catalog</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -117,113 +130,135 @@
         </p>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer">
-      <section class="footer-nav">
-        <h2 class="footer-nav-title">Navigation</h2>
-        <ul>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Design Services</a>
-          </li>
-          <li>
-            <a href="#">Featured On</a>
-          </li>
-          <li>
-            <a href="#">2018 Holiday Catalog</a>
-          </li>
-          <li>
-            <a href="#">Shop By Designer</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-customer">
-        <h2 class="footer-customer-title">Customer Information</h2>
-        <ul>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">Sale Exclusions</a>
-          </li>
-          <li>
-            <a href="#">Shipping & Returns</a>
-          </li>
-          <li>
-            <a href="#">Terms & Conditions</a>
-          </li>
-          <li>
-            <a href="#"> Privacy Policy </a>
-          </li>
-          <li>
-            <a href="#">Search</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contact">
-        <h2 class="footer-contact-title">Connect</h2>
-        <div class="joinus"></div>
-        <!-- Здесь будет форма регистрации с полем ввода e-mail -->
-        <ul class="footer-contact-list">
-          <li>
-            <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/pinterest.png" alt="Pinterest" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-additional">
-        <h2 class="hidden">additional links</h2>
-        <ul class="footer-additional-list">
-          <li>
-            <a href="#">Company Rating</a>
-            <ol class="rating">
+      <div class="footer-content">
+        <section class="footer-nav">
+          <h2 class="footer-title">Navigation</h2>
+          <ul class="footer-nav-list">
+            <li>
+              <a class="footer-link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Design Services</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Featured On</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">2018 Holiday Catalog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Shop By Designer</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-customer">
+          <h2 class="footer-title">Customer Information</h2>
+          <ul class="footer-customer-list">
+            <li>
+              <a class="footer-link" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Sale Exclusions</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Shipping & Returns</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Privacy Policy </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Search</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contact">
+          <h2 class="footer-title">Connect</h2>
+          <form class="join">
+            <input
+              type="email"
+              name="email"
+              class="email-join"
+              placeholder="Email"
+            />
+            <button class="footer-button button" type="button">
+              JOIN
+            </button>
+          </form>
+          <ul class="footer-contact-list">
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/pinterest.png" alt="Pinterest"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-additional">
+          <h2 class="footer-additional-title hidden">additional links</h2>
+          <div class="rating">
+            <ol class="rating-list">
+              <li class="rating-list-title">
+                <a class="footer-link" href="#">Company Rating</a>
+              </li>
               <li>
-                <button class="rating-button 1">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 1">
+                  <img src="/images/star.png" alt="One star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 2">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 2">
+                  <img src="/images/star.png" alt="Two star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 3">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 3">
+                  <img src="/images/star.png" alt="Three star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 4">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 4">
+                  <img src="/images/star.png" alt="Four star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 5">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent 5">
+                  <img src="/images/star.png" alt="Five star" />
                 </button>
               </li>
             </ol>
-          </li>
-          <li>
-            <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
-          </li>
-          <li>
-            <a href="#">Web Design — Direct Line Development</a>
-          </li>
-        </ul>
-      </section>
+          </div>
+
+          <a class="footer-link footer-additional-point" href="#"
+            >Copyright © 2018 Dlk • Design Life Kids</a
+          >
+
+          <a class="footer-link link_gray footer-additional-point" href="#"
+            >Web Design — Direct Line Development</a
+          >
+        </section>
+      </div>
     </footer>
   </body>
 </html>
