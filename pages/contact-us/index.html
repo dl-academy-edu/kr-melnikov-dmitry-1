@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="/common.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Catalog</title>
+    <title>Contact Us</title>
   </head>
 
   <body>
@@ -51,7 +51,7 @@
     <main>
       <section class="path container">
         <h1 class="page-title">
-          CATEGORY PRODUCTS
+          Contact Us
         </h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
@@ -78,56 +78,85 @@
             </li>
             <li class="breadcrumbs-item">
               <a
-                href="/pages/catalog/index.html"
+                href="/pages/contact-us/index.html"
                 class="breadcrumbs-link breadcrumbs-link_active"
               >
-                <span>Catalog</span>
+                <span>Contact Us</span>
               </a>
             </li>
           </ul>
         </div>
       </section>
-      <section class="category">
-        <h2 class="hidden">category list</h2>
-        <ul class="category-list">
-          <li class="category-card">
-            <a class="category-card-name" href="#">APPAREL KIDS</a>
-          </li>
-          <li class="category-card">
-            <a class="category-card-name" href="#">HOLIDAY SHOP</a>
-          </li>
-          <li class="category-card">
-            <a class="category-card-name" href="/pages/catalog/toys/index.html"
-              >TOYS</a
+      <section class="page-content container">
+        <h2 class="hidden">Contact Us FORM</h2>
+        <form class="contact-us-form" action="/pages/contact-us/index.html">
+          <div class="form-row">
+            <div class="form-cell-100">
+              <label class="form-lable">
+                <input
+                  class="input-text"
+                  type="text"
+                  name="name"
+                  placeholder="Ivan Ivanov"
+                />
+                <span class="input-label-text">Name</span>
+              </label>
+            </div>
+            <div class="form-cell-50">
+              <label class="form-lable">
+                <input class="input-text" type="tel" name="phone" />
+                <span class="input-label-text">Phone</span>
+              </label>
+            </div>
+            <div class="form-cell-50">
+              <label class="form-lable">
+                <input class="input-text" type="email" name="email" />
+                <span class="input-label-text">E-mail</span>
+              </label>
+            </div>
+            <label class="form-lable">
+              <textarea
+                class="form-textarea"
+                name="message"
+                cols="70"
+                rows="10"
+              ></textarea>
+              <span class="input-label-text">Message</span>
+            </label>
+            <label class="form-lable-checkbox">
+              <input
+                class="input-checkbox checkbox_js hidden"
+                type="checkbox"
+                name="agreement"
+                value="agreement"
+                onchange="document.querySelector('.button_agree').disabled = !this.checked;"
+              />
+              <span class="input-label-checkbox"
+                >By clicking on the button, you consent to the processing of
+                your personal data</span
+              >
+              <span class="input-checkbox-checker"> </span>
+            </label>
+            <button
+              class="form-button button button_agree"
+              type="submit"
+              disabled="disabled"
             >
-          </li>
-          <li class="category-card">
-            <a class="category-card-name" href="#">ACCESSORIES</a>
-          </li>
-          <li class="category-card">
-            <a class="category-card-name" href="#">SALE</a>
-          </li>
-          <li class="category-card">
-            <a class="category-card-name" href="#">APPAREL ADULTS</a>
-          </li>
-        </ul>
-      </section>
-      <section class="description">
-        <h2 class="description-title">PRODUCT DESCRIPTION</h2>
-        <p class="description-text">
-          Interactive doll Zapf Creation Baby Born Sister can drink from a
-          bottle and almost really cry. You can even bathe her, just like a
-          little sister.
-          <br />
-          A toy with a height of 43 cm bends its knees, the head rotates, it can
-          stand upright. Such a doll will be an excellent choice for a gift for
-          a girl from 4 years old.
-          <br />
-          The set includes a miniature set of fashionable clothes, a hairbrush,
-          a bottle for water, a pair of hairpins and elastic bands for hair, as
-          well as two bracelets: one for the doll, the other for her young
-          mistress.
-        </p>
+              SUBMIT
+            </button>
+          </div>
+        </form>
+        <div class="text-block">
+          <p class="text-block-point">
+            Our support team are on-hand to assist with any issues you are
+            experiencing.
+          </p>
+          <p class="text-block-point">
+            Please use the form to contact us with your needs. Send us a message
+            and we'll respond as soon as possible.
+          </p>
+          <p class="text-block-main">An expert is waiting to help you!</p>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
@@ -260,5 +289,6 @@
         </section>
       </div>
     </footer>
+    <script src="/contact-us.js"></script>
   </body>
 </html>

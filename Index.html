@@ -3,129 +3,191 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@300;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="/common.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Home</title>
   </head>
+
   <body>
-    <header class="header">
+    <!-- HEADER -->
+    <header class="header container">
       <a href="/Index.html">
         <img class="header-link" src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
         <ul class="header-list">
-          <li><a class="header-nav-link" href="#">Blog</a></li>
-          <li><a class="header-nav-link" href="#">Catalog</a></li>
-          <li><a class="header-nav-link" href="#">About us</a></li>
+          <li><a class="header-link" href="/pages/blog/index.html">Blog</a></li>
+          <li>
+            <a class="header-link" href="/pages/catalog/index.html">Catalog</a>
+          </li>
+          <li><a class="header-link" href="#">About us</a></li>
         </ul>
       </nav>
       <ul class="header-contacts">
         <li>
-          <button class="header-search-button">
+          <button class="header-search-button button-transparent">
             <img src="/images/search.png" alt="Search" />
           </button>
         </li>
         <li>
-          <a class="button" href="#">
+          <a
+            class="header-link header-link_nomargin"
+            href="/pages/contact-us/index.html"
+          >
             Contact Us
           </a>
         </li>
       </ul>
     </header>
+    <!-- MAIN -->
     <main>
+      <!-- POSTER -->
       <section class="poster">
-        <h1 class="poster-title">
-          THE OOH NOO COLLECTION
-        </h1>
-        <section class="poster-swith">
-          <h2 class="poster-swith-title">
-            01
-          </h2>
-          <ul class="poster-list">
-            <li>
-              <button class="poster-swith-button 1">
-                _
+        <div class="container">
+          <div class="poster-content">
+            <div class="poster-useful">
+              <h1 class="poster-title">
+                THE OOH NOO <br />
+                COLLECTION
+              </h1>
+              <p class="poster-text">Designed in Slovenia</p>
+              <button class="poster-button button button-open_js">
+                EXPLORE NOW
               </button>
-            </li>
-            <li>
-              <button class="poster-swith-button 2">
-                _
-              </button>
-            </li>
-            <li>
-              <button class="poster-swith-button 3">
-                _
-              </button>
-            </li>
-            <li>
-              <button class="poster-swith-button 4">
-                _
-              </button>
-            </li>
-          </ul>
-        </section>
-        <p>Designed in Slovenia</p>
-        <a class="button" href="#">EXPLORE NOW</a>
-        <p>FREE (CONTINENTAL) USA SHIPPINGON ALL ORDERS OF $100 USD OR MORE!</p>
+            </div>
+            <div class="poster-swith">
+              <h2 class="poster-swith-title">
+                01
+              </h2>
+              <ul class="poster-list">
+                <li>
+                  <button
+                    class="poster-swith-button poster-swith-button_active"
+                  ></button>
+                </li>
+                <li>
+                  <button
+                    class="poster-swith-button"
+                  ></button>
+                </li>
+                <li>
+                  <button
+                    class="poster-swith-button"
+                  ></button>
+                </li>
+                <li>
+                  <button
+                    class="poster-swith-button"
+                  ></button>
+                </li>
+              </ul>
+            </div>
+            <img class="poster-transparent" src="/images/poster-1.png" alt="" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="poster-bottom">
+            <p class="poster-bottom-text">
+              FREE (CONTINENTAL) USA SHIPPINGON ALL ORDERS OF $100 USD OR MORE!
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="category">
+      <!-- CATEGORY -->
+      <section class="category container">
         <a href="/pages/catalog/index.html">
           <h2 class="category-title">CATEGORY PRODUCTS</h2>
         </a>
         <ul class="category-list">
-          <li class="category-card">
-            <a class="category-card-name" href="#">APPAREL KIDS</a>
+          <li class="category-card category-card_1">
+            <a class="category-card-link" href="#1">
+              <h3 class="category-card-name">apparel kids</h3>
+            </a>
           </li>
           <li class="category-card">
-            <a class="category-card-name" href="#">HOLIDAY SHOP</a>
+            <a class="category-card-link" href="#2">
+              <h3 class="category-card-name">holiday shop</h3>
+            </a>
           </li>
           <li class="category-card">
-            <a class="category-card-name" href="/pages/catalog/toys/index.html"
-              >TOYS</a
-            >
+            <a class="category-card-link" href="/pages/catalog/toys/index.html">
+              <h3 class="category-card-name">toys</h3>
+            </a>
           </li>
-          <li class="category-card">
-            <a class="category-card-name" href="#">ACCESSORIES</a>
+          <li class="category-card" href="#4">
+            <a class="category-card-link" href="#4">
+              <h3 class="category-card-name">accessories</h3>
+            </a>
           </li>
         </ul>
-        <button class="category-left-button">
-          <img src="/images/left.svg" alt="Left" />
-        </button>
-        <button class="category-right-button">
-          <img src="/images/right.svg" alt="Right" />
-        </button>
-        <p class="category-text">
-          Modern finds for the modern home. Curated goods by unique designers
-          around the world from fashion to furniture for kids and adults.
-        </p>
+        <div class="category-bottom">
+          <button class="category-button button-transparent">
+            <img src="/images/left.svg" alt="Left" />
+          </button>
+          <button class="category-button button-transparent">
+            <img src="/images/right.svg" alt="Right" />
+          </button>
+          <p class="category-text">
+            Modern finds for the modern home. Curated goods by unique designers
+            around the world from fashion to furniture for kids and adults.
+          </p>
+        </div>
       </section>
-      <section class="useful">
-        <h2 class="useful-title">
-          DELIVERY
+      <!-- USEFUL CONTENT BLOCK -->
+      <section class="useful container">
+        <h2 class="hidden">
+          USEFUL CONTENT BLOCK
         </h2>
         <img class="useful-img" src="/images/delivery.jpg" alt="useful" />
-        <ul class="useful-list">
-          <li class="delivery">
-            <button class="delivery-button link">Delivery</button>
-          </li>
-          <li class="guarantee">
-            <button class="guarantee-button link">Guarantee</button>
-          </li>
-          <li class="credit">
-            <button class="credit-button link">Credit</button>
-          </li>
-        </ul>
-        <p class="useful-text">
-          Some days i feel like i've been working on dlk my entire life and
-          there are other days that i am completely shocked that four years have
-          flown by. It's simply magical. What started as an outlet to deal with
-          the traumatic loss of my husband, dlk has now become a truly happy
-          place for me and i have you and all of the beautiful designers that we
-          work with to thank!
-        </p>
-        <a class="button" href="#">LEARN MORE</a>
+        <div class="useful-content">
+          <h3 class="useful-title">
+            Delivery
+          </h3>
+          <ul class="useful-list">
+            <li class="useful-point">
+              <button class="useful-button button-transparent useful-button_active" value="delivery">
+                Delivery
+              </button>
+            </li>
+            <li class="useful-point">
+              <button
+                class="useful-button button-transparent"
+                value="guarantee"
+              >
+                Guarantee
+              </button>
+            </li>
+            <li class="useful-point">
+              <button class="useful-button button-transparent" value="credit">
+                Credit
+              </button>
+            </li>
+          </ul>
+          <p class="useful-text">
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+          </p>
+          <p class="useful-text">
+            What started as an outlet to deal with the traumatic loss of my
+            husband, dlk has now become a truly happy place for me and i have
+            you and all of the beautiful designers that we work with to thank!
+          </p>
+          <a class="more-useful-button button" href="#">LEARN MORE</a>
+        </div>
       </section>
-      <section class="partners">
+      <!-- PARTNERS -->
+      <section class="partners container">
         <h2 class="hidden">Partners</h2>
-        <ul>
+        <ul class="partners-list">
           <li>
             <a class="partner" href="#"
               ><img src="/images/mail.png" alt="MAIL.ru"
@@ -149,170 +211,238 @@
         </ul>
       </section>
     </main>
-    <article class="article">
-      <h2 class="article-title">DESIGN LIFE KIDS</h2>
-      <h3 class="article-add-title">About Us</h3>
-      <p class="article-text">
-        Some days i feel like i've been working on dlk my entire life and there
-        are other days that i am completely shocked that four years have flown
-        by. It's simply magical.
-      </p>
-    </article>
-    <section class="contacts">
-      <h2>CONTACTS</h2>
-      <p>
-        Some days i feel like i've been working on dlk my entire life and there
-        are other days that i am completely shocked that four years have flown
-        by. It's simply magical.
-      </p>
-      <div class="map"></div>
-    </section>
+    <!-- ARTICLE -->
+    <div class="article-content container">
+      <article class="article article-content-point">
+        <h2 class="article-title">DESIGN LIFE KIDS</h2>
+        <h3 class="article-add-title">About Us</h3>
+        <p class="article-text">
+          Some days i feel like i've been working on dlk my entire life and
+          there are other days that i am completely shocked that four years have
+          flown by. It's simply magical.
+        </p>
+        <a class="article-button button" href="#">buy now</a>
+      </article>
+      <section class="contacts article-content-point">
+        <h2 class="contacts-title">CONTACTS</h2>
+        <p class="contacts-text">
+          Some days i feel like i've been working on dlk my entire life and
+          there are other days that i am completely shocked that four years have
+          flown by. It's simply magical.
+        </p>
+        <div class="map">
+          <img src="/images/map.png" alt="Map" />
+        </div>
+      </section>
+    </div>
+    <!-- FOOTER -->
     <footer class="footer">
-      <section class="footer-nav">
-        <h2 class="footer-nav-title">Navigation</h2>
-        <ul>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Design Services</a>
-          </li>
-          <li>
-            <a href="#">Featured On</a>
-          </li>
-          <li>
-            <a href="#">2018 Holiday Catalog</a>
-          </li>
-          <li>
-            <a href="#">Shop By Designer</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-customer">
-        <h2 class="footer-customer-title">Customer Information</h2>
-        <ul>
-          <li>
-            <a href="#">Contact Us</a>
-          </li>
-          <li>
-            <a href="#">Sale Exclusions</a>
-          </li>
-          <li>
-            <a href="#">Shipping & Returns</a>
-          </li>
-          <li>
-            <a href="#">Terms & Conditions</a>
-          </li>
-          <li>
-            <a href="#"> Privacy Policy </a>
-          </li>
-          <li>
-            <a href="#">Search</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contact">
-        <h2 class="footer-contact-title">Connect</h2>
-        <div class="joinus"></div>
-        <!-- Здесь будет форма регистрации с полем ввода e-mail -->
-        <ul class="footer-contact-list">
-          <li>
-            <a href="#"><img src="/images/facebook.png" alt="Facebook" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/pinterest.png" alt="Pinterest" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/images/instagram.png" alt="Instagram" /></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-additional">
-        <h2 class="hidden">additional links</h2>
-        <ul class="footer-additional-list">
-          <li>
-            <a href="#">Company Rating</a>
-            <ol class="rating">
+      <div class="footer-content">
+        <section class="footer-nav">
+          <h2 class="footer-title">Navigation</h2>
+          <ul class="footer-nav-list">
+            <li>
+              <a class="footer-link" href="#">About Us</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Design Services</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Featured On</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">2018 Holiday Catalog</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Shop By Designer</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-customer">
+          <h2 class="footer-title">Customer Information</h2>
+          <ul class="footer-customer-list">
+            <li>
+              <a class="footer-link" href="#">Contact Us</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Sale Exclusions</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Shipping & Returns</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"> Privacy Policy </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">Search</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contact">
+          <h2 class="footer-title">Connect</h2>
+          <form class="join">
+            <input
+              type="email"
+              name="email"
+              class="email-join"
+              placeholder="Email"
+            />
+            <button class="footer-button button" type="button">
+              JOIN
+            </button>
+          </form>
+          <ul class="footer-contact-list">
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/facebook.png" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/twitter.png" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/pinterest.png" alt="Pinterest"
+              /></a>
+            </li>
+            <li>
+              <a class="footer-contact-link" href="#"
+                ><img src="/images/instagram.png" alt="Instagram"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-additional">
+          <h2 class="footer-additional-title hidden">additional links</h2>
+          <div class="rating">
+            <ol class="rating-list">
+              <li class="rating-list-title">
+                <a class="footer-link" href="#">Company Rating</a>
+              </li>
               <li>
-                <button class="rating-button 1">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent">
+                  <img src="/images/star.png" alt="One star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 2">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent">
+                  <img src="/images/star.png" alt="Two star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 3">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent">
+                  <img src="/images/star.png" alt="Three star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 4">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent">
+                  <img src="/images/star.png" alt="Four star" />
                 </button>
               </li>
               <li>
-                <button class="rating-button 5">
-                  <img src="/images/star.png" alt="Rating" />
+                <button class="rating-button button-transparent">
+                  <img src="/images/star.png" alt="Five star" />
                 </button>
               </li>
             </ol>
-          </li>
-          <li>
-            <a href="#">Copyright © 2018 Dlk • Design Life Kids</a>
-          </li>
-          <li>
-            <a href="#">Web Design — Direct Line Development</a>
-          </li>
-        </ul>
-      </section>
+          </div>
+
+          <a class="footer-link footer-additional-point" href="#"
+            >Copyright © 2018 Dlk • Design Life Kids</a
+          >
+
+          <a class="footer-link link_gray footer-additional-point" href="#"
+            >Web Design — Direct Line Development</a
+          >
+        </section>
+      </div>
     </footer>
-    <form name="contact-us" class="contact-us" method="get" action="#">
-      <fieldset>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone" />
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <label for="message">Message</label>
-        <input
-          type="text"
-          name="message"
-          id="message"
-          style="width: 300px; height: 200px;"
-        />
-        <label>
-          <input name="agreement" type="checkbox" />
-          By clicking on the button, you consent to the processing of your
-          personal data
-        </label>
-        <button type="submit">
-          SUBMIT
-        </button>
-      </fieldset>
-      <button type="button">
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 15 15"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+    <!-- Explore Now form -->
+    <div class="modal-bg modal_js">
+      <form class="modal-window" action="/pages/contact-us/index.html">
+        <div class="form-row">
+          <div class="form-cell-100">
+            <label class="form-lable">
+              <input
+                class="input-text"
+                type="text"
+                name="name"
+                placeholder="Ivan Ivanov"
+              />
+              <span class="input-label-text">Name</span>
+            </label>
+          </div>
+          <div class="form-cell-50">
+            <label class="form-lable">
+              <input class="input-text" type="tel" name="phone" />
+              <span class="input-label-text">Phone</span>
+            </label>
+          </div>
+          <div class="form-cell-50">
+            <label class="form-lable">
+              <input class="input-text" type="email" name="email" />
+              <span class="input-label-text">E-mail</span>
+            </label>
+          </div>
+          <label class="form-lable">
+            <textarea
+              class="form-textarea"
+              name="message"
+              cols="70"
+              rows="10"
+            ></textarea>
+            <span class="input-label-text">Message</span>
+          </label>
+          <label class="form-lable-checkbox">
+            <input
+              class="input-checkbox checkbox_js hidden"
+              type="checkbox"
+              name="agreement"
+              value="agreement"
+              onchange="document.querySelector('.button_agree').disabled = !this.checked;"
+            />
+            <span class="input-label-checkbox"
+              >By clicking on the button, you consent to the processing of your
+              personal data</span
+            >
+            <span class="input-checkbox-checker"> </span>
+          </label>
+          <button
+            class="form-button button button_agree"
+            type="submit"
+            disabled="disabled"
+          >
+            SUBMIT
+          </button>
+        </div>
+        <button
+          class="button-close button-close_js"
+          type="button"
+          aria-label="exit"
         >
-          <path
-            d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z"
-            fill="gray"
-          />
-        </svg>
-      </button>
-    </form>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <script src="/main.js"></script>
   </body>
 </html>
