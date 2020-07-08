@@ -94,10 +94,6 @@ img {
 
 /* Breadcrumbs */
 
-.breadcrumbs {
-  margin-top: -10px;
-}
-
 .page-title {
   font-family: Montserrat;
   font-style: normal;
@@ -105,7 +101,7 @@ img {
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-top: -2px;
 
   color: #1e0606;
@@ -117,12 +113,13 @@ img {
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs-item {
   margin-right: 20px;
+  
 }
 
 .breadcrumbs-link {
@@ -132,6 +129,8 @@ img {
   font-size: 20px;
   line-height: 25px;
   text-transform: capitalize;
+
+  min-width: 35px;
 
   color: #1e0606;
 }
@@ -458,11 +457,14 @@ img {
 
 /* FOOTER */
 
+.footer {
+background-color: #434343;
+}
+
 .footer-content {
   max-width: 1400px;
   margin: 0 auto;
   padding: 100px 110px;
-  background-color: #434343;
   display: flex;
   flex-wrap: wrap;
 }

@@ -1,5 +1,5 @@
 .blog {
-  margin-top: 0;
+  margin-top: 50px;
   margin-bottom: 11px;
   padding: 0;
 }
@@ -48,6 +48,14 @@
   color: #1e0606;
 
   margin: 10px 0;
+}
+
+.blog-card-title:hover {
+  text-decoration-line: underline;
+}
+
+.blog-card-title:active {
+  opacity: .7;
 }
 
 .blog-card-text {
