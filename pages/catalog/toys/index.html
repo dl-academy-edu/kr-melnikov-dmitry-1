@@ -108,175 +108,234 @@
           </ul>
         </div>
       </section>
-      <form
-        name="toys-assortment-point"
-        class="assortment"
-        method="get"
-        action="#"
-      >
-        <fieldset class="cost">
-          <legend>Cost</legend>
-          <p>
-            <label for="cost">0</label>
-            <input
-              type="range"
-              class="cost"
-              name="cost"
-              id="cost"
-              min="0"
-              max="500"
-              value="150"
-            />
-            <label for="cost">500</label>
-          </p>
-        </fieldset>
-        <fieldset class="color">
-          <legend>Color</legend>
-          <ul>
-            <li>
-              <label>
-                <input name="black" type="checkbox" checked />
-                <span>Black</span>
+      <section class="assortment">
+        <form
+          name="assortment"
+          class="assortment-form container"
+          method="get"
+          action="#"
+        >
+          <fieldset class="form-fieldset cost">
+            <legend class="form-legend">Cost</legend>
+            <p class="cost-position">
+              <input
+                type="range"
+                class="cost-range"
+                name="cost"
+                min="0"
+                max="500"
+                value="100"
+              />
+              <label class="cost-lable" for="cost">
+                <span class="cost-lable-point">0</span>
+                <span class="cost-lable-point">500</span>
               </label>
-            </li>
-            <li>
-              <label>
-                <input name="blue" type="checkbox" />
-                <span>Blue</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="green" type="checkbox" />
-                <span>Green</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="white" type="checkbox" />
-                <span>White</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="delivery">
-          <legend>Delivery</legend>
-          <ul>
-            <li>
-              <label>
-                <input name="delivery" type="radio" value="free" />
-                <span> Free shipping</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="delivery" type="radio" value="fast" checked />
-                <span> Fast shipping</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Amount</legend>
-          <label>
-            <input name="amount" type="radio" value="0-5" checked />
-            <span>0-5</span>
-          </label>
-          <label>
-            <input name="amount" type="radio" value="10-20" />
-            <span>10-20</span>
-          </label>
-          <label>
-            <input name="amount" type="radio" value="20-50" />
-            <span>20-50</span>
-          </label>
-        </fieldset>
-        <button type="submit">
-          APPLY
-        </button>
-      </form>
+            </p>
+          </fieldset>
+          <fieldset class="form-fieldset color">
+            <legend class="form-legend">Color</legend>
+            <ul class="color-list">
+              <li>
+                <label class="assortment-lable-checkbox">
+                  <input
+                    class="input-checkbox hidden"
+                    type="checkbox"
+                    name="color"
+                    value="black"
+                    checked
+                  />
+                  <span class="input-label-checkbox">Black</span>
+                  <span class="input-checkbox-checker"> </span>
+                </label>
+              </li>
+              <li>
+                <label class="assortment-lable-checkbox">
+                  <input
+                    class="input-checkbox hidden"
+                    type="checkbox"
+                    name="color"
+                    value="blue"
+                  />
+                  <span class="input-label-checkbox">Blue</span>
+                  <span class="input-checkbox-checker"> </span>
+                </label>
+              </li>
+              <li>
+                <label class="assortment-lable-checkbox">
+                  <input
+                    class="input-checkbox hidden"
+                    type="checkbox"
+                    name="color"
+                    value="green"
+                  />
+                  <span class="input-label-checkbox">Green</span>
+                  <span class="input-checkbox-checker"> </span>
+                </label>
+              </li>
+              <li>
+                <label class="assortment-lable-checkbox">
+                  <input
+                    class="input-checkbox hidden"
+                    type="checkbox"
+                    name="color"
+                    value="white"
+                  />
+                  <span class="input-label-checkbox">White</span>
+                  <span class="input-checkbox-checker"> </span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-fieldset delivery">
+            <legend class="form-legend">Delivery</legend>
+            <ul class="delivery-list">
+              <li>
+                <label class="form-lable-radio">
+                  <input
+                    class="input-radio hidden"
+                    type="radio"
+                    name="delivery"
+                    value="free" 
+                  />
+                  <span class="input-label-radio">Free shipping</span>
+                  <span class="input-radio-checker"></span>
+                </label>
+              </li>
+              <li>
+                <label class="form-lable-radio">
+                  <input
+                    class="input-radio hidden"
+                    type="radio"
+                    name="delivery"
+                    value="fast"
+                    checked
+                  />
+                  <span class="input-label-radio">Fast shipping</span>
+                  <span class="input-radio-checker"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-fieldset amount">
+            <legend class="form-legend">Amount</legend>
+            <ul class="amount-list">
+              <li>
+                <label class="form-lable-button-radio">
+                  <input
+                    class="input-button-radio hidden"
+                    type="radio"
+                    name="amount"
+                    value="0-5" 
+                    checked
+                  />
+                  <div class="input-button-radio-checker">
+                  <span class="input-label-button-radio">0-5</span>
+                </div>
+                </label>
+              </li>
+              <li>
+                <label class="form-lable-button-radio">
+                  <input
+                    class="input-button-radio hidden"
+                    type="radio"
+                    name="amount"
+                    value="10-20" 
+                  />
+                  <div class="input-button-radio-checker">
+                  <span class="input-label-button-radio">10-20</span>
+                </div>
+                </label>
+              </li>
+              <li>
+                <label class="form-lable-button-radio">
+                  <input
+                    class="input-button-radio hidden"
+                    type="radio"
+                    name="amount"
+                    value="20-50" 
+                  />
+                  <div class="input-button-radio-checker">
+                  <span class="input-label-button-radio">20-50</span>
+                </div>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="assortment-button button" type="submit">
+            APPLY
+          </button>
+        </form>
+      </section>
       <section class="products container">
         <h2 class="hidden">products list</h2>
         <ul class="products-list">
           <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img
-                class="product-card-img"
-                src="/images/product-photo.png"
-                alt="SHARKY BEAN BAG CHAIR COVER"
-              />
-              <h3 class="product-card-title">SHARKY BEAN BAG CHAIR COVER</h3>
-              <span class="product-card-price">
-                $60.00 USD
-              </span>
+            <a class="product-card-link" href="#1">
+              <div class="product-card-modal">
+                <span class="product-card-modal-text">learn more</span>
+              </div>
             </a>
+            <h3 class="product-card-name">SHARKY BEAN BAG CHAIR COVER</h3>
+            <span class="product-card-price">
+              $60.00 USD
+            </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img
-                class="product-card-img"
-                src="/images/product-photo.png"
-                alt="BRASS DECO FRAMES"
-              />
-              <h3 class="product-card-title">BRASS DECO FRAMES</h3>
-              <span class="product-card-price">
-                $66.00 USD
-              </span>
+            <a class="product-card-link" href="#2">
+              <div class="product-card-modal">
+                <span class="product-card-modal-text">learn more</span>
+              </div>
             </a>
+            <h3 class="product-card-name">BRASS DECO FRAMES</h3>
+            <span class="product-card-price">
+              $66.00 USD
+            </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img
-                class="product-card-img"
-                src="/images/cibo-full-apron.png"
-                alt="CIBO FULL APRON"
-              />
-              <h3 class="product-card-title">CIBO FULL APRON</h3>
-              <span class="product-card-price">
-                $60.00 USD
-              </span>
+            <a class="product-card-link" href="#3">
+              <div class="product-card-modal">
+                <span class="product-card-modal-text">learn more</span>
+              </div>
             </a>
+            <h3 class="product-card-name">CIBO FULL APRON</h3>
+            <span class="product-card-price">
+              $60.00 USD
+            </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img
-                class="product-card-img"
-                src="/images/product-photo.png"
-                alt="GATCHA GATCHA GUMBALL MACHINE"
-              />
-              <h3 class="product-card-title">GATCHA GATCHA GUMBALL MACHINE</h3>
-              <span class="product-card-price">
-                $56.00 USD
-              </span>
+            <a class="product-card-link" href="#4">
+              <div class="product-card-modal">
+                <span class="product-card-modal-text">learn more</span>
+              </div>
             </a>
+            <h3 class="product-card-name">GATCHA GATCHA GUMBALL MACHINE</h3>
+            <span class="product-card-price">
+              $56.00 USD
+            </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img
-                class="product-card-img"
-                src="/images/product-photo.png"
-                alt="CHRISTMAS ADVENT SCENTED CANDLE"
-              />
-              <h3 class="product-card-title">
-                CHRISTMAS ADVENT SCENTED CANDLE
-              </h3>
-              <span class="product-card-price">
-                $29.00 USD
-              </span>
+            <a class="product-card-link" href="#5">
+              <div class="product-card-modal">
+                <span class="product-card-modal-text">learn more</span>
+              </div>
             </a>
+            <h3 class="product-card-name">
+              CHRISTMAS ADVENT SCENTED CANDLE
+            </h3>
+            <span class="product-card-price">
+              $29.00 USD
+            </span>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img
-                class="product-card-img"
-                src="/images/product-photo.png"
-                alt="TANGLE SPINNING TEA LIGHT"
-              />
-              <h3 class="product-card-title">TANGLE SPINNING TEA LIGHT</h3>
-              <span class="product-card-price">
-                $56.00 USD
-              </span>
+            <a class="product-card-link" href="#6">
+              <div class="product-card-modal">
+                <span class="product-card-modal-text">learn more</span>
+              </div>
             </a>
+            <h3 class="product-card-name">TANGLE SPINNING TEA LIGHT</h3>
+            <span class="product-card-price">
+              $56.00 USD
+            </span>
           </li>
         </ul>
       </section>
@@ -284,40 +343,68 @@
         <h2 class="pagenumber-title hidden">
           number of page
         </h2>
-          <ol class="pagenumber-list">
-            <li class="pagenumber-item_left">
-              <button class="pagenumber-button">
-                <svg class="svg-rotate" width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.82846 0L3.62396e-05 2.82843L11.5858 14.4142L3.62396e-05 26L2.82846 28.8284L17.2427 14.4142L2.82846 0Z" fill="#1E0606" fill-opacity="0.12"/>
-                  </svg>
-              </button>
-            </li>
-            <li class="pagenumber-item">
-              <span class="pagenumber-link button-transparent pagenumber-link_active">1</span>
-            </li>
-            <li class="pagenumber-item">
-              <a href="#" class="pagenumber-link button-transparent">
-                <span>2</span>
-              </a>
-            </li>
-            <li class="pagenumber-item">
-              <a href="#" class="pagenumber-link button-transparent">
-                <span>3</span>
-              </a>
-            </li>
-            <li class="pagenumber-item">
-              <a href="#" class="pagenumber-link button-transparent">
-                <span>4</span>
-              </a>
-            </li>
-            <li class="pagenumber-item_right">
-              <button href="#" class="pagenumber-button">
-                <svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.82846 0L3.62396e-05 2.82843L11.5858 14.4142L3.62396e-05 26L2.82846 28.8284L17.2427 14.4142L2.82846 0Z" fill="#1E0606" fill-opacity="0.12"/>
-                  </svg>
-              </button>
-            </li>
-          </ol>
+        <ol class="pagenumber-list">
+          <li class="pagenumber-item_left">
+            <button class="pagenumber-button">
+              <svg
+                class="svg-rotate"
+                width="18"
+                height="29"
+                viewBox="0 0 18 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.82846 0L3.62396e-05 2.82843L11.5858 14.4142L3.62396e-05 26L2.82846 28.8284L17.2427 14.4142L2.82846 0Z"
+                  fill="#1E0606"
+                  fill-opacity="0.12"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="pagenumber-item">
+            <span
+              class="pagenumber-link button-transparent pagenumber-link_active"
+              >1</span
+            >
+          </li>
+          <li class="pagenumber-item">
+            <a href="#" class="pagenumber-link button-transparent">
+              <span>2</span>
+            </a>
+          </li>
+          <li class="pagenumber-item">
+            <a href="#" class="pagenumber-link button-transparent">
+              <span>3</span>
+            </a>
+          </li>
+          <li class="pagenumber-item">
+            <a href="#" class="pagenumber-link button-transparent">
+              <span>4</span>
+            </a>
+          </li>
+          <li class="pagenumber-item_right">
+            <button href="#" class="pagenumber-button">
+              <svg
+                width="18"
+                height="29"
+                viewBox="0 0 18 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.82846 0L3.62396e-05 2.82843L11.5858 14.4142L3.62396e-05 26L2.82846 28.8284L17.2427 14.4142L2.82846 0Z"
+                  fill="#1E0606"
+                  fill-opacity="0.12"
+                />
+              </svg>
+            </button>
+          </li>
+        </ol>
       </section>
     </main>
     <!-- FOOTER -->
