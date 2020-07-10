@@ -26,7 +26,7 @@
 }
 
 .text-block-point {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -38,7 +38,7 @@
 }
 
 .text-block-main {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 26px;

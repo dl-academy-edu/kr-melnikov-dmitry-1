@@ -90,6 +90,7 @@
   height: 3px;
   width: 31px;
   margin-bottom: 11px;
+  transition: 0.3s;
 
   background-color: #D6CAC2;
 }
@@ -131,119 +132,6 @@
 
   color: #ffffff;
 }
- /* Второй вариант верстки Poster */
-/* .poster {
-  margin-top: 127px;
-  padding: 0 80px;
-}
-
-.poster-content {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  padding-top: 17px;
-  padding-left: 29px;
-  padding-bottom: 89px;
-
-  background-color: #eee4db;
-}
-
-.poster-title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 44px;
-  margin-top: 25px;
-  margin-bottom: 20px;
-
-  color: #1e0606;
-}
-
-.poster-swith {
-  z-index: 1;
-  order: 0;
-  padding: 0;
-}
-
-.poster-useful {
-  z-index: 1;
-  order: 1;
-  margin: 0;
-  padding: 0;
-  margin-top: 50px;
-  margin-left: 45px;
-  margin-bottom: 0px;
-}
-
-.poster-transparent {
-  order: 2;
-  position: absolute;
-  right: 100px;
-  top: -90px;
-}
-
-.poster-swith-title {
-  display: block;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 73px;
-
-  color: rgba(30, 6, 6, 0.05);
-  margin: 0;
-}
-
-.poster-list {
-  display: block;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 11px 1px;
-}
-
-.poster-text {
-  margin: 18px 0 10px;
-  font-family: "Crimson Text";
-  font-style: italic;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
-
-  color: #1e0606;
-}
-
-.poster-swith-button {
-  height: 3px;
-  width: 31px;
-  margin-bottom: 11px;
-  background-color: rgba(30, 6, 6, 0.6);
-}
-
-.poster-button {
-  margin-top: 18px;
-}
-
-.poster-bottom {
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: #c29974;
-}
-.poster-bottom-text {
-  display: block;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  text-align: center;
-
-  color: #ffffff;
-} */
 
 /* CATEGORY */
 
@@ -255,7 +143,7 @@
 }
 
 .category-title {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 38px;
@@ -264,13 +152,14 @@
   color: #1e0606;
   padding-left: 10px;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .category-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-items: flex-start;
   padding-inline-start: 0;
   margin: 0;
 }
@@ -278,7 +167,7 @@
 .category-card {
   padding: 0px;
   display: block;
-  margin: 0 10px 30px;
+  margin: 5px 10px 18px;
 }
 
 .category-card-link {
@@ -316,7 +205,7 @@
 
 .category-card-name {
   z-index: 0;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   max-width: 192px;
@@ -326,6 +215,7 @@
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+  transition: 0.3s;
 }
 
 .category-card-link:hover > .category-card-name {
@@ -342,6 +232,7 @@
   align-items: center;
   margin-left: 8px;
   margin-bottom: 90px;
+  margin-top: 12px;
 }
 
 .category-button {
@@ -356,24 +247,14 @@
 .category-text {
   display: block;
   max-width: 580px;
-  margin: 0 0 0 14px;
-  font-family: Open Sans;
+  margin: 0 0 0 13px;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
 
   color: #1e0606;
-}
-
-.category-card[href="#1"] {
-  background-image: url("/images/apparel-kids.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-blend-mode: multiply;
-
-  background-color: #dbe4db;
 }
 
 /* USEFUL CONTENT BLOCK */
@@ -389,7 +270,7 @@
 }
 
 .useful-title {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 38px;
@@ -397,7 +278,7 @@
   padding-left: 61px;
   padding-top: 0;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   text-transform: uppercase;
 
   color: #1e0606;
@@ -407,39 +288,57 @@
   list-style-type: none;
   padding-left: 0;
   margin-top: 5px;
+  margin-bottom: 18px;
 }
 
 .useful-button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
   font-family: "Crimson Text";
   font-style: italic;
   font-weight: normal;
   font-size: 26px;
   line-height: 32px;
   width: 326px;
-  margin-left: 0;
+  margin: 0;
   text-align: start;
-  margin-bottom: 11px;
-  padding-left: 60px;
-  padding-top: 1;
-  padding-bottom: 12px;
+  padding: 11px 180px 11px 60px;
 
   color: #1e0606;
 
   background: none;
+  transition:.5s;
+}
+
+.useful-button:hover {
+  opacity: .7;
+
+  background-color: rgba(112, 187, 220, 0.2);
+}
+
+.useful-button:active {
+  opacity: .5;
+
+  background-color: rgba(112, 187, 220, 0.2);
 }
 
 .useful-button_active {
-  padding-top: 11px;
-  padding-bottom: 11px;
-
-  background-color: rgba(112, 187, 220, 0.2);;
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+  
+  background-color: rgba(112, 187, 220, 0.2);
 }
 
 .useful-text {
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
   margin-left: 60px;
   max-width: 480px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -450,7 +349,7 @@
 
 .more-useful-button {
   margin-left: 60px;
-  margin-top: 25px;
+  margin-top: 26px;
   width: 149px;
 }
 
@@ -467,6 +366,10 @@
   list-style-type: none;
   padding: 0;
   align-items: center;
+}
+
+.partner {
+  transition: 0.3s;
 }
 
 .partner:hover{
@@ -501,7 +404,7 @@
 
 .article-title,
 .contacts-title {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 38px;
@@ -529,7 +432,7 @@
 
 .article-text,
 .contacts-text {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -600,6 +503,7 @@
   height: 15px;
 
   border: none;
+  transition: 0.3s;
 }
 
 .button-close:hover {
