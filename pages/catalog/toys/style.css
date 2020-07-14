@@ -28,6 +28,7 @@
 .form-fieldset {
   border: none;
   padding: 0;
+  margin-right: 5px;
 }
 
 /* form COST */
@@ -39,7 +40,7 @@
 }
 
 .cost-position {
-margin: 15px 0 0 7px;
+  margin: 15px 0 0 7px;
 }
 
 .cost-range {
@@ -65,16 +66,22 @@ margin: 15px 0 0 7px;
   height: 24px;
   border-radius: 50%;
   cursor: pointer;
-  background-image: radial-gradient(circle at center, #FFFFFF 3.65px, #FFFFFF 0px, #C29974 0px, #c29974 90%);
+  background-image: radial-gradient(
+    circle at center,
+    #ffffff 3.65px,
+    #ffffff 0px,
+    #c29974 0px,
+    #c29974 90%
+  );
   transition: 0.1s;
 }
 
-.cost-range::-webkit-slider-thumb:hover{
-  opacity: .95;
+.cost-range::-webkit-slider-thumb:hover {
+  opacity: 0.95;
 }
 
-.cost-range::-webkit-slider-thumb:active{
-  opacity: .9;
+.cost-range::-webkit-slider-thumb:active {
+  opacity: 0.9;
 }
 
 .cost-lable {
@@ -96,7 +103,7 @@ margin: 15px 0 0 7px;
 /* form COLOR */
 
 .color {
-  margin-left: 90px;
+  margin-left: 87px;
   padding-left: 2px;
 }
 
@@ -109,17 +116,11 @@ margin: 15px 0 0 7px;
   flex-direction: column;
 }
 
-.assortment-lable-checkbox {
-  display: flex;
-  justify-self: center;
-
-  margin-bottom: 15px;
-}
-
 /* form DELIVERY*/
 
 .delivery {
-  margin-left: 120px;
+  margin-left: 115px;
+  padding-left: 3px;
 }
 
 .delivery-list {
@@ -128,14 +129,13 @@ margin: 15px 0 0 7px;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-
 }
 
 /* form AMOUNT */
 
 .amount {
-  margin-left: 65px;
-  padding-left: 2px;
+  margin-left: 60px;
+  padding-left: 3px;
 }
 
 .amount-list {
@@ -167,34 +167,33 @@ margin: 15px 0 0 7px;
   align-items: center;
   transition: 0.3s;
 
-  background-color: #FFFFFF ;
+  background-color: #ffffff;
 }
-
 
 .input-button-radio:hover ~ .input-button-radio-checker {
   cursor: pointer;
-  
-  background-color: #EDDEEB ;
+
+  background-color: #eddeeb;
 }
 
 .input-button-radio:checked ~ .input-button-radio-checker {
   cursor: pointer;
 
-  background-color: #F3D0DB ;
+  background-color: #f3d0db;
 }
 
 .input-button-radio-checker:hover > .input-label-button-radio {
   color: #877379;
 }
 
-.input-button-radio-checker:focus > .input-label-button-radio  {
+.input-button-radio-checker:focus > .input-label-button-radio {
   color: #877379;
 }
 
 .assortment-button {
   align-self: start;
   width: 95px;
-  margin: 37px 0 0 58px;
+  margin: 37px 0 0 56px;
 }
 
 /* Products catalog */
@@ -223,44 +222,23 @@ margin: 15px 0 0 7px;
 
 .product-card-link {
   position: relative;
-  height: 385px;
+  min-height: 385px;
   width: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
-.product-card-link[href="#1"] {
-  background-image: url(/images/sharky-bean-bag-chair-cover.png);
-}
-
-.product-card-link[href="#2"] {
-  background-image: url(/images/brass-deco-frames.png);
-}
-
-.product-card-link[href="#3"] {
-  background-image: url(/images/cibo-full-apron.png);
-}
-
-.product-card-link[href="#4"] {
-  background-image: url(/images/gatcha-gumball-machine.png);
-}
-
-.product-card-link[href="#5"] {
-  background-image: url(/images/christmas-advent-scented-candle.png);
-}
-
-.product-card-link[href="#6"] {
-  background-image: url(/images/tangle-spring-tea-light.png);
+.product-img {
+  position: absolute;
+  left: auto;
+  top: auto;
 }
 
 .product-card-modal {
   z-index: -1;
   width: 207px;
-  height: 207px;
+  min-height: 207px;
   display: flex;
   justify-content: center;
   align-items: center;

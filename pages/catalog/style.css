@@ -30,44 +30,40 @@
 
 .category-card-link {
   position: relative;
-  height: 270px;
   width: 280px;
+  min-height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+}
+
+.category-card-img {
+  position: absolute;
+  left: auto;
+  top: auto; 
 }
 
 .category-card-link[href="#1"] {
-  background-image: url(/images/apparel-kids.png);
   background-color: #dbe4db;
 }
 
 .category-card-link[href="#2"] {
-  background-image: url(/images/holiday-shop.png);
   background-color: rgba(186, 142, 107, 0.3);
 }
 
 .category-card-link[href="/pages/catalog/toys/index.html"] {
-  background-image: url(/images/toys.png);
-  background-color: #dbe4db;
+  background-color: #F8F2DA;
 }
 
 .category-card-link[href="#4"] {
-  background-image: url(/images/accessories.png);
   background-color: rgba(9, 3, 79, 0.17);
 }
 
 .category-card-link[href="#5"] {
-  background-image: url(/images/sale.png);
   background-color: rgba(207, 68, 111, 0.25);
 }
 
 .category-card-link[href="#6"] {
-  background-image: url(/images/apparel-adults.png);
   background-color: rgba(125, 151, 218, 0.2);
 }
 

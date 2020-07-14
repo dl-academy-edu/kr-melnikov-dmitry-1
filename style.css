@@ -155,12 +155,13 @@
   margin-bottom: 25px;
 }
 
+
 .category-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-items: flex-start;
-  padding-inline-start: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -172,34 +173,32 @@
 
 .category-card-link {
   position: relative;
-  height: 270px;
   width: 280px;
+  min-height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+}
+
+.category-card-img {
+  position: absolute;
+  left: auto;
+  top: auto; 
 }
 
 .category-card-link[href="#1"] {
-  background-image: url(/images/apparel-kids.png);
   background-color: #dbe4db;
 }
 
 .category-card-link[href="#2"] {
-  background-image: url(/images/holiday-shop.png);
   background-color: rgba(186, 142, 107, 0.3);
 }
 
 .category-card-link[href="/pages/catalog/toys/index.html"] {
-  background-image: url(/images/toys.png);
-  background-color: #dbe4db;
+  background-color: #F8F2DA;
 }
 
 .category-card-link[href="#4"] {
-  background-image: url(/images/accessories.png);
   background-color: rgba(9, 3, 79, 0.17);
 }
 
@@ -215,7 +214,7 @@
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .category-card-link:hover > .category-card-name {
