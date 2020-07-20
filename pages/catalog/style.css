@@ -20,7 +20,7 @@
 
 .category-card {
   padding: 0px;
-  display: block;
+  display: flex;
   margin: 5px 10px 18px;
 }
 

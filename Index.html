@@ -18,8 +18,29 @@
   <body>
     <!-- HEADER -->
     <header class="header container">
-      <a class="header-link" href="/index.html">
-        <img src="/images/logo.svg" alt="logo" />
+      <a class="logo header-link" href="/index.html" aria-label="Logo">
+        <svg
+          width="100"
+          height="52"
+          viewBox="0 0 100 52"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 0H18.1129C31.1202 0 40.4058 12.3713 40.4058 24.0356V27.7332C40.4058 39.3974 31.1202 51.7689 18.1129 51.7689H0V0ZM37.6192 24.0356C37.6192 13.5132 29.2167 2.77333 18.1129 2.77333H2.78661V48.9956H18.1129C29.2167 48.9956 37.6192 38.2557 37.6192 27.7333V24.0356Z"
+            fill="#1E0606"
+          />
+          <path
+            d="M46.4435 0H49.2301V49.2267H64.092V52H46.4435V0Z"
+            fill="#1E0606"
+          />
+          <path
+            d="M67.8074 0V51.7689H70.5941V27.3833L71.278 26.7025L96.0884 51.7689H100L73.2485 24.7414L98.1084 0H94.1675L70.5941 23.4612V0H67.8074Z"
+            fill="#1E0606"
+          />
+        </svg>
       </a>
       <nav class="header-nav">
         <ul class="header-list">
@@ -33,7 +54,7 @@
       <ul class="header-contacts">
         <li>
           <button class="header-search-button button-transparent">
-            <img src="/images/search.png" alt="Search" />
+            <img src="/images/search.png" alt="Search" aria-label="Search" />
           </button>
         </li>
         <li>
@@ -54,8 +75,7 @@
           <div class="poster-content">
             <div class="poster-useful">
               <h1 class="poster-title">
-                THE OOH NOO <br />
-                COLLECTION
+                THE OOH NOO COLLECTION
               </h1>
               <p class="poster-text">Designed in Slovenia</p>
               <button class="poster-button button button-open_js">
@@ -70,20 +90,36 @@
                 <li>
                   <button
                     class="poster-swith-button poster-swith-button_active"
+                    aria-label="First poster"
                   ></button>
                 </li>
                 <li>
-                  <button class="poster-swith-button"></button>
+                  <button
+                    class="poster-swith-button"
+                    aria-label="Second poster"
+                  ></button>
                 </li>
                 <li>
-                  <button class="poster-swith-button"></button>
+                  <button
+                    class="poster-swith-button"
+                    aria-label="Third poster"
+                  ></button>
                 </li>
                 <li>
-                  <button class="poster-swith-button"></button>
+                  <button
+                    class="poster-swith-button"
+                    aria-label="Fourth poster"
+                  ></button>
                 </li>
               </ul>
             </div>
-            <img class="poster-transparent" src="/images/poster-1.png" alt="" />
+            <img
+              class="poster-transparent"
+              src="/images/poster-1.png"
+              alt="THE OOH NOO COLLECTION"
+              width="635"
+              height="461"
+            />
           </div>
         </div>
         <div class="container">
@@ -104,6 +140,8 @@
                 class="category-card-img"
                 src="/images/apparel-kids.png"
                 alt="apparel kids"
+                width="280"
+                height="270"
               />
               <h3 class="category-card-name">apparel kids</h3>
             </a>
@@ -114,6 +152,8 @@
                 class="category-card-img"
                 src="/images/holiday-shop.png"
                 alt="holiday shop"
+                width="280"
+                height="270"
               />
               <h3 class="category-card-name">holiday shop</h3>
             </a>
@@ -124,6 +164,8 @@
                 class="category-card-img"
                 src="/images/toys.png"
                 alt="toys"
+                width="280"
+                height="270"
               />
               <h3 class="category-card-name">toys</h3>
             </a>
@@ -134,13 +176,18 @@
                 class="category-card-img"
                 src="/images/accessories.png"
                 alt="accessories"
+                width="280"
+                height="270"
               />
               <h3 class="category-card-name">accessories</h3>
             </a>
           </li>
         </ul>
         <div class="category-bottom">
-          <button class="category-button button-transparent">
+          <button
+            class="category-button button-transparent"
+            aria-label="Previous categories"
+          >
             <svg
               width="18"
               height="30"
@@ -151,7 +198,10 @@
               <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4" />
             </svg>
           </button>
-          <button class="category-button button-transparent">
+          <button
+            class="category-button button-transparent"
+            aria-label="Next categories"
+          >
             <svg
               class="svg-rotate"
               width="18"
@@ -174,7 +224,13 @@
         <h2 class="hidden">
           USEFUL CONTENT BLOCK
         </h2>
-        <img class="useful-img" src="/images/delivery.jpg" alt="useful" />
+        <img
+          class="useful-img"
+          src="/images/delivery.jpg"
+          alt="useful"
+          width="480"
+          height="559"
+        />
         <div class="useful-content">
           <h3 class="useful-title">
             Delivery
@@ -218,22 +274,42 @@
         <ul class="partners-list">
           <li>
             <a class="partner" href="#"
-              ><img src="/images/mail.png" alt="MAIL.ru"
+              ><img
+                src="/images/mail.png"
+                alt="Mail.ru"
+                width="193"
+                height="60"
+                aria-label="Mail.ru"
             /></a>
           </li>
           <li>
             <a class="partner" href="#"
-              ><img src="/images/apple.png" alt="Apple"
+              ><img
+                src="/images/apple.png"
+                alt="Apple"
+                width="179"
+                height="61"
+                aria-label="Apple"
             /></a>
           </li>
           <li>
             <a class="partner" href="#"
-              ><img src="/images/eltex.png" alt="ELTEX"
+              ><img
+                src="/images/eltex.png"
+                alt="ELTEX"
+                width="216"
+                height="46"
+                aria-label="ELTEX"
             /></a>
           </li>
           <li>
             <a class="partner" href="#"
-              ><img src="/images/owox.png" alt="OWOX"
+              ><img
+                src="/images/owox.png"
+                alt="OWOX"
+                width="211"
+                height="40"
+                aria-label="OWOX"
             /></a>
           </li>
         </ul>
@@ -260,11 +336,10 @@
         </p>
         <div class="map">
           <iframe
+            class="map-content"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6307.35918005307!2d-122.41793094908978!3d37.77411045351795!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809be90f0637%3A0xd558ef250f4addf9!2sBill%20Graham%20Civic%20Auditorium!5e0!3m2!1sen!2sru!4v1594990937935!5m2!1sen!2sru"
             width="483"
             height="196"
-            frameborder="0"
-            style="border: 0;"
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
@@ -337,22 +412,42 @@
           <ul class="footer-contact-list">
             <li>
               <a class="footer-contact-link" href="#"
-                ><img src="/images/facebook.png" alt="Facebook"
+                ><img
+                  src="/images/facebook.png"
+                  alt="Facebook"
+                  width="30"
+                  height="30"
+                  aria-label="Facebook"
               /></a>
             </li>
             <li>
               <a class="footer-contact-link" href="#"
-                ><img src="/images/twitter.png" alt="Twitter"
+                ><img
+                  src="/images/twitter.png"
+                  alt="Twitter"
+                  width="30"
+                  height="30"
+                  aria-label="Twitter"
               /></a>
             </li>
             <li>
               <a class="footer-contact-link" href="#"
-                ><img src="/images/pinterest.png" alt="Pinterest"
+                ><img
+                  src="/images/pinterest.png"
+                  alt="Pinterest"
+                  width="30"
+                  height="30"
+                  aria-label="Pinterest"
               /></a>
             </li>
             <li>
               <a class="footer-contact-link" href="#"
-                ><img src="/images/instagram.png" alt="Instagram"
+                ><img
+                  src="/images/instagram.png"
+                  alt="Instagram"
+                  width="30"
+                  height="30"
+                  aria-label="Instagram"
               /></a>
             </li>
           </ul>
@@ -366,27 +461,57 @@
               </li>
               <li>
                 <button class="rating-button button-transparent">
-                  <img src="/images/star.png" alt="One star" />
+                  <img
+                    src="/images/star.png"
+                    alt="One star"
+                    width="14"
+                    height="13"
+                    aria-label="One star"
+                  />
                 </button>
               </li>
               <li>
                 <button class="rating-button button-transparent">
-                  <img src="/images/star.png" alt="Two star" />
+                  <img
+                    src="/images/star.png"
+                    alt="Two star"
+                    width="14"
+                    height="13"
+                    aria-label="Two star"
+                  />
                 </button>
               </li>
               <li>
                 <button class="rating-button button-transparent">
-                  <img src="/images/star.png" alt="Three star" />
+                  <img
+                    src="/images/star.png"
+                    alt="Three star"
+                    width="14"
+                    height="13"
+                    aria-label="Three star"
+                  />
                 </button>
               </li>
               <li>
                 <button class="rating-button button-transparent">
-                  <img src="/images/star.png" alt="Four star" />
+                  <img
+                    src="/images/star.png"
+                    alt="Four star"
+                    width="14"
+                    height="13"
+                    aria-label="Four star"
+                  />
                 </button>
               </li>
               <li>
                 <button class="rating-button button-transparent">
-                  <img src="/images/star.png" alt="Five star" />
+                  <img
+                    src="/images/star.png"
+                    alt="Five star"
+                    width="14"
+                    height="13"
+                    aria-label="Five star"
+                  />
                 </button>
               </li>
             </ol>
