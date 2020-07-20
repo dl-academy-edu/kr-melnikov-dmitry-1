@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-items: flex-start;
-  padding-inline-start: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -24,50 +24,47 @@
   margin: 5px 10px 18px;
 }
 
-.category-card:nth-child(6n+4) {
+.category-card:nth-child(6n + 4) {
   margin-left: 210px;
 }
 
 .category-card-link {
   position: relative;
-  height: 270px;
   width: 280px;
+  min-height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  outline: none;
+}
+
+.category-card-img {
+  position: absolute;
+  left: auto;
+  top: auto;
 }
 
 .category-card-link[href="#1"] {
-  background-image: url(/images/apparel-kids.png);
   background-color: #dbe4db;
 }
 
 .category-card-link[href="#2"] {
-  background-image: url(/images/holiday-shop.png);
   background-color: rgba(186, 142, 107, 0.3);
 }
 
 .category-card-link[href="/pages/catalog/toys/index.html"] {
-  background-image: url(/images/toys.png);
-  background-color: #dbe4db;
+  background-color: #f8f2da;
 }
 
 .category-card-link[href="#4"] {
-  background-image: url(/images/accessories.png);
   background-color: rgba(9, 3, 79, 0.17);
 }
 
 .category-card-link[href="#5"] {
-  background-image: url(/images/sale.png);
   background-color: rgba(207, 68, 111, 0.25);
 }
 
 .category-card-link[href="#6"] {
-  background-image: url(/images/apparel-adults.png);
   background-color: rgba(125, 151, 218, 0.2);
 }
 
@@ -90,6 +87,10 @@
   text-decoration-line: underline;
 }
 
+.category-card-link:focus > .category-card-name {
+  text-decoration-line: underline;
+}
+
 .category-card-link:active > .category-card-name {
   text-decoration-line: underline;
   opacity: 0.5;
@@ -98,9 +99,9 @@
 /* Description */
 
 .description {
- margin-top: 30px;
- margin-bottom: 42px;
- padding: 3px 200px;
+  margin-top: 30px;
+  margin-bottom: 42px;
+  padding: 3px 200px;
 }
 
 .description-title {
@@ -111,8 +112,8 @@
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
-  
-  color: #1E0606;
+
+  color: #1e0606;
 }
 
 .description-text {
@@ -124,6 +125,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  
-  color: #1E0606;
+
+  color: #1e0606;
 }

@@ -11,16 +11,15 @@
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="/common.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/common.min.css" />
+    <link rel="stylesheet" href="./style.min.css" />
     <title>Home</title>
   </head>
-
   <body>
     <!-- HEADER -->
     <header class="header container">
-      <a href="/Index.html">
-        <img class="header-link" src="/images/logo.svg" alt="logo" />
+      <a class="header-link" href="/index.html">
+        <img src="/images/logo.svg" alt="logo" />
       </a>
       <nav class="header-nav">
         <ul class="header-list">
@@ -97,27 +96,45 @@
       </section>
       <!-- CATEGORY -->
       <section class="category container">
-        <a href="/pages/catalog/index.html">
-          <h2 class="category-title">CATEGORY PRODUCTS</h2>
-        </a>
+        <h2 class="category-title">CATEGORY PRODUCTS</h2>
         <ul class="category-list">
-          <li class="category-card category-card_1">
+          <li class="category-card">
             <a class="category-card-link" href="#1">
+              <img
+                class="category-card-img"
+                src="/images/apparel-kids.png"
+                alt="apparel kids"
+              />
               <h3 class="category-card-name">apparel kids</h3>
             </a>
           </li>
           <li class="category-card">
             <a class="category-card-link" href="#2">
+              <img
+                class="category-card-img"
+                src="/images/holiday-shop.png"
+                alt="holiday shop"
+              />
               <h3 class="category-card-name">holiday shop</h3>
             </a>
           </li>
           <li class="category-card">
             <a class="category-card-link" href="/pages/catalog/toys/index.html">
+              <img
+                class="category-card-img"
+                src="/images/toys.png"
+                alt="toys"
+              />
               <h3 class="category-card-name">toys</h3>
             </a>
           </li>
           <li class="category-card">
             <a class="category-card-link" href="#4">
+              <img
+                class="category-card-img"
+                src="/images/accessories.png"
+                alt="accessories"
+              />
               <h3 class="category-card-name">accessories</h3>
             </a>
           </li>
@@ -242,7 +259,16 @@
           flown by. It's simply magical.
         </p>
         <div class="map">
-          <img src="/images/map.png" alt="Map" />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6307.35918005307!2d-122.41793094908978!3d37.77411045351795!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809be90f0637%3A0xd558ef250f4addf9!2sBill%20Graham%20Civic%20Auditorium!5e0!3m2!1sen!2sru!4v1594990937935!5m2!1sen!2sru"
+            width="483"
+            height="196"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
         </div>
       </section>
     </div>
@@ -365,11 +391,9 @@
               </li>
             </ol>
           </div>
-
           <a class="footer-link footer-additional-point" href="#"
             >Copyright © 2018 Dlk • Design Life Kids</a
           >
-
           <a class="footer-link link_gray footer-additional-point" href="#"
             >Web Design — Direct Line Development</a
           >
@@ -382,12 +406,7 @@
         <div class="form-row">
           <div class="form-cell-100">
             <label class="form-lable">
-              <input
-                class="input-text"
-                type="text"
-                name="name"
-                placeholder="Ivan Ivanov"
-              />
+              <input class="input-text input_js" type="text" name="name" />
               <span class="input-label-text">Name</span>
             </label>
           </div>
@@ -424,7 +443,6 @@
               >By clicking on the button, you consent to the processing of your
               personal data</span
             >
-            <span class="input-checkbox-checker"> </span>
           </label>
           <button
             class="form-button button button_agree"
@@ -438,22 +456,9 @@
           class="button-close button-close_js"
           type="button"
           aria-label="exit"
-        >
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 15 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.21902 14.6113C1.70029 15.1295 0.893368 15.1295 0.374636 14.6113C0.11527 14.3522 -6.13512e-07 14.0355 -5.9841e-07 13.69C-5.83308e-07 13.3445 0.11527 13.0278 0.374636 12.7687L5.64841 7.5L0.374637 2.23127C0.115271 1.97215 -7.23629e-08 1.65547 -5.72611e-08 1.30998C-4.21593e-08 0.964491 0.115271 0.647806 0.374637 0.388689C0.893369 -0.129545 1.70029 -0.129545 2.21902 0.388689L7.4928 5.65738L12.7666 0.38869C13.2853 -0.129545 14.0922 -0.129545 14.611 0.38869C15.1297 0.906924 15.1297 1.71304 14.611 2.23127L9.33718 7.5L14.611 12.7687C15.1297 13.287 15.1297 14.0931 14.611 14.6113C14.0922 15.1295 13.2853 15.1295 12.7666 14.6113L7.4928 9.34258L2.21902 14.6113Z"
-              fill="white"
-            />
-          </svg>
-        </button>
+        ></button>
       </form>
     </div>
-    <script src="/main.js"></script>
+    <script src="/main.min.js"></script>
   </body>
 </html>
